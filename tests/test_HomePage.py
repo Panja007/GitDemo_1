@@ -21,6 +21,9 @@ class TestHomePage(BaseClass):
         SuccessText = self.driver.find_element_by_class_name("alert-success").text
         assert "Success" in SuccessText
         self.driver.refresh()
+        print("first repository")
+        print("first repository2")
+        print("first repository3")
 
     @pytest.fixture(params=HomePageData.getTestData("TestCase2"))
     def getData(self,request):
